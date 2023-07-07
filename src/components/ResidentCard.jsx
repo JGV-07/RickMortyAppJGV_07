@@ -21,7 +21,7 @@ const ResidentCard = ({ url }) => {
           <span className="resident__status-value">{character?.status}</span>
         </div>
       </header>
-      <section className="resident_body">
+      <section className="resident__body">
         <h3 className="resident__name">{character?.name}</h3>
         <hr className="resident__line" />
         <ul className="resident__list">
