@@ -4,3 +4,29 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.image__header{
+    max-width: 300px;
+    margin: auto;
+}
+
+.resident__input,
+.resident__location-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.resident__container-location{
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    border: 2px solid red;
+    max-width: fit-content;
+}
+
+.resident__info{
+    display: flex;
+}
+
