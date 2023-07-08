@@ -35,7 +35,7 @@ function App() {
 
   return (
     <>
-      <img className="image__header" src="/images/header.jpeg" alt="" />
+      <div className="image__header"></div>
       <FormLocation 
         setIdLocation={setIdLocation}
       />
