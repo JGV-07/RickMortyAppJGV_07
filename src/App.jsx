@@ -17,22 +17,25 @@ function App() {
   useEffect(() => {
     const url = `https://rickandmortyapi.com/api/location/${idLocation}`
     setIsLoading(true)
+
     axios.get(url)
+
       .then(res => {
         setLocation(res.data)
         setHasError(false)
       })
+
       .catch(err => {
-      console.error(err)
-      setHasError(true)
+        console.error(err)
+        setHasError(true)
       })
+
       .finally(() => {
         setIsLoading(false)
       })
+
   }, [idLocation])
   
-  console.log(idLocation)
-
   return (
     <>
       <div className="image__header"></div>
@@ -41,10 +44,10 @@ function App() {
       />
       {
         isLoading
-        ? (<Loader/>)
+        ? (<Loader className="loader"/>)
         : (
         hasError
-          ? (<h1> ❌ Hey! you must provide an id from 1 to 126 😓 </h1>)
+          ? (<h1 className='resident__error'> ❌ Hey! you must provide an id from 1 to 126 😓 </h1>)
           : (
             <>
               <LocationInfo 

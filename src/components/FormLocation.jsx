@@ -15,8 +15,8 @@ const FormLocation = ({setIdLocation}) => {
 
   return (
     <form className="resident__input"  onSubmit={handleSubmit}>
-        <input className="resident__input-search" id="inputId" style={{ boxShadow: '1px 1px 10px'}}  type="text" />
-        <button className="resident__button-search" style={{ backgroundColor: 'green', color: 'white' }}>Search</button>
+        <input className="resident__input-search" id="inputId" style={{ boxShadow: '1px 1px 10px'}} type="text" />
+        <button className="resident__button-search">Search</button>
     </form>
   )
 }
